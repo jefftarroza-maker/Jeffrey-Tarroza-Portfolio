@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabButtons = document.querySelectorAll('.timeline-tabs .tab-btn');
     const contactForm = document.getElementById('contactForm');
     const formSuccessAlert = document.getElementById('formSuccessAlert');
+    const formErrorAlert = document.getElementById('formErrorAlert');
+    const submitBtn = document.getElementById('submitBtn');
 
     // 3. Render Portfolio Data
     renderAll(activeData);
@@ -180,15 +182,47 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 6. Contact Form Logic
+    // 6. Working Contact Form Submission (FormSubmit Backend Integration)
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            formSuccessAlert.style.display = 'block';
-            contactForm.reset();
-            setTimeout(() => {
-                formSuccessAlert.style.display = 'none';
-            }, 5000);
+
+            if (formErrorAlert) formErrorAlert.style.display = 'none';
+            if (formSuccessAlert) formSuccessAlert.style.display = 'none';
+
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '⏳ Sending message...';
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch('https://formsubmit.co/ajax/jeffreytarroza.educator@gmail.com', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    if (formSuccessAlert) formSuccessAlert.style.display = 'block';
+                    contactForm.reset();
+                } else {
+                    // Fallback to standard form submit if AJAX is blocked
+                    contactForm.submit();
+                }
+            } catch (err) {
+                // If network error, attempt direct submit
+                try {
+                    contactForm.submit();
+                } catch (fallbackErr) {
+                    if (formErrorAlert) formErrorAlert.style.display = 'block';
+                }
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            }
         });
     }
 
