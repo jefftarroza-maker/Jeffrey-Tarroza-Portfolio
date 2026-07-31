@@ -4,8 +4,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Data Initialization & Storage Override Handling
-    let activeData = getStoredData() || portfolioData;
+    // 1. Data Initialization
+    let activeData = portfolioData;
     let activeTimelineTab = 'work';
 
     // 2. DOM Elements Selection
@@ -16,13 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabButtons = document.querySelectorAll('.timeline-tabs .tab-btn');
     const contactForm = document.getElementById('contactForm');
     const formSuccessAlert = document.getElementById('formSuccessAlert');
-
-    // Modal Elements
-    const openEditModalBtn = document.getElementById('openEditModalBtn');
-    const closeEditModalBtn = document.getElementById('closeEditModalBtn');
-    const editModalBackdrop = document.getElementById('editModalBackdrop');
-    const editPortfolioForm = document.getElementById('editPortfolioForm');
-    const resetModalBtn = document.getElementById('resetModalBtn');
 
     // 3. Render Portfolio Data
     renderAll(activeData);
@@ -199,58 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 7. Quick Editor Modal Logic
-    if (openEditModalBtn && editModalBackdrop) {
-        openEditModalBtn.addEventListener('click', () => {
-            document.getElementById('editName').value = activeData.personal.name;
-            document.getElementById('editTitle').value = activeData.personal.title;
-            document.getElementById('editBio').value = activeData.personal.bio;
-            document.getElementById('editEmail').value = activeData.personal.email;
-            document.getElementById('editLocation').value = activeData.personal.location;
-            editModalBackdrop.classList.add('open');
-        });
-    }
-
-    if (closeEditModalBtn) {
-        closeEditModalBtn.addEventListener('click', () => {
-            editModalBackdrop.classList.remove('open');
-        });
-    }
-
-    if (editPortfolioForm) {
-        editPortfolioForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            activeData.personal.name = document.getElementById('editName').value;
-            activeData.personal.title = document.getElementById('editTitle').value;
-            activeData.personal.bio = document.getElementById('editBio').value;
-            activeData.personal.email = document.getElementById('editEmail').value;
-            activeData.personal.location = document.getElementById('editLocation').value;
-
-            localStorage.setItem('teacher_portfolio_custom_data', JSON.stringify(activeData));
-            renderAll(activeData);
-            editModalBackdrop.classList.remove('open');
-        });
-    }
-
-    if (resetModalBtn) {
-        resetModalBtn.addEventListener('click', () => {
-            localStorage.removeItem('teacher_portfolio_custom_data');
-            activeData = JSON.parse(JSON.stringify(portfolioData));
-            renderAll(activeData);
-            editModalBackdrop.classList.remove('open');
-        });
-    }
-
-    function getStoredData() {
-        try {
-            const raw = localStorage.getItem('teacher_portfolio_custom_data');
-            return raw ? JSON.parse(raw) : null;
-        } catch (err) {
-            return null;
-        }
-    }
-
-    // 8. Active Link Scroll Spy
+    // 7. Active Link Scroll Spy
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
 
