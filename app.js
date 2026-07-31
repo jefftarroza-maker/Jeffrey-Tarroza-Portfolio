@@ -1,5 +1,6 @@
 /**
  * Teacher Web Portfolio - Main Application Script
+ * Customized for Jeffrey D. Tarroza, LPT
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,15 +35,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderPersonalDetails(personal) {
-        document.getElementById('navBrand').childNodes[0].textContent = `${personal.name} `;
+        const brand = document.getElementById('navBrand');
+        if (brand) {
+            brand.childNodes[0].textContent = `${personal.name} `;
+        }
         document.getElementById('cardName').textContent = personal.name;
         document.getElementById('cardTitle').textContent = personal.title;
-        document.getElementById('heroBadgeText').textContent = `Certified ${personal.title}`;
+        document.getElementById('heroBadgeText').textContent = personal.title;
         document.getElementById('heroBioDescription').textContent = personal.bio;
 
         document.getElementById('contactEmail').textContent = personal.email;
         document.getElementById('contactLocation').textContent = personal.location;
-        document.getElementById('contactSpecialization').textContent = personal.title;
+        if (document.getElementById('contactPhone')) {
+            document.getElementById('contactPhone').textContent = personal.phone;
+        }
 
         document.getElementById('footerName').textContent = personal.name;
         document.getElementById('footerTitle').textContent = personal.title;
@@ -61,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderPhilosophy(philosophy) {
-        if (philosophySummary) {
+        if (document.getElementById('philosophySummary')) {
             document.getElementById('philosophySummary').textContent = philosophy.summary;
         }
 
@@ -102,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             `).join('');
-        } else {
+        } else if (tab === 'education') {
             timelineContainer.innerHTML = data.education.map(item => `
                 <div class="timeline-item">
                     <div class="timeline-dot" style="border-color: var(--sage);"></div>
@@ -113,6 +119,21 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <p class="timeline-org">${item.institution} • ${item.year}</p>
                             </div>
                             <span class="timeline-badge" style="background-color: var(--sage-light); color: var(--sage);">${item.honors}</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        } else if (tab === 'dev' && data.professionalDevelopment) {
+            timelineContainer.innerHTML = data.professionalDevelopment.map(item => `
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="border-color: var(--amber);"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">${item.title}</h3>
+                                <p class="timeline-org">${item.provider} • ${item.date}</p>
+                            </div>
+                            <span class="timeline-badge" style="background-color: var(--amber-light); color: var(--amber);">PD Certificate</span>
                         </div>
                     </div>
                 </div>

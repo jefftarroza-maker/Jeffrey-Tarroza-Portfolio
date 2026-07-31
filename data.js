@@ -1,129 +1,169 @@
 /**
- * Teacher Portfolio Data Configuration
- * Easily update your personal details, experience, philosophy, and contact info here.
+ * Teacher Portfolio Data Configuration - Jeffrey D. Tarroza, LPT
+ * Official Resume Data
  */
 
 const portfolioData = {
     personal: {
-        name: "Jeff Tarroza",
-        title: "K-5 Elementary Educator",
-        tagline: "Nurturing Young Minds Through Curiosity, Care, & Creative Inquiry",
-        bio: "Passionate K-5 elementary educator dedicated to creating joyful, inclusive, and high-impact learning experiences. Specializing in foundational literacy, early STEM integration, and social-emotional learning, I strive to empower every child to explore, ask questions, and build lifelong confidence.",
-        gradeFocus: "Grade K - 5 All Subjects",
-        location: "Greater Metropolitan Area",
-        email: "jeff.tarroza.education@email.com",
-        phone: "+1 (555) 234-5678",
+        name: "Jeffrey D. Tarroza, LPT",
+        title: "IB-Trained ESL & Science Educator",
+        tagline: "Inspiring Inquiry, Global Mindedness, & Academic Excellence",
+        bio: "IB-trained Licensed Teacher with 3 years of ESL and Science teaching experience in international classrooms. Skilled in inquiry-based learning, technology-enhanced instruction, and managing large, diverse groups to drive academic excellence and global-mindedness.",
+        objective: "To inspire curiosity and critical thinking in international learners through innovative, inquiry-driven teaching, while leveraging technology and differentiated instruction to create inclusive, high-achieving classrooms.",
+        location: "Carmona City, Cavite, Philippines",
+        email: "jeffreytarroza.educator@gmail.com",
+        phone: "+63 912 295 1103",
         profilePhoto: "./assets/profile.jpg",
         resumeLink: "#contact",
         stats: [
-            { value: "5+", label: "Years Experience" },
-            { value: "K-5", label: "State Certified" },
-            { value: "150+", label: "Students Inspired" }
+            { value: "3+", label: "Years ESL & Science Experience" },
+            { value: "LPT", label: "Licensed Professional Teacher" },
+            { value: "IB ATL", label: "Certified IB Educator" }
         ]
     },
     socialLinks: {
         linkedin: "https://linkedin.com",
-        teachersPayTeachers: "https://teacherspayteachers.com",
-        googleClassroom: "https://classroom.google.com",
-        twitter: "https://twitter.com"
+        email: "mailto:jeffreytarroza.educator@gmail.com"
     },
     philosophy: {
-        headline: "My Educational Philosophy",
-        summary: "Every child possesses innate curiosity and potential. My role as an educator is to provide a safe, structured, and vibrant space where students feel encouraged to experiment, collaborate, and grow into thoughtful lifelong learners.",
+        headline: "Educational Philosophy & Pedagogy",
+        summary: "To inspire curiosity and critical thinking in international learners through innovative, inquiry-driven teaching, while leveraging technology and differentiated instruction to create inclusive, high-achieving classrooms.",
         pillars: [
             {
-                icon: "🌱",
-                title: "Student-Centered Inquiry",
-                description: "Learning begins with curiosity. I design hands-on lessons that encourage students to ask questions, solve real-world problems, and take ownership of their learning journey."
+                icon: "🔬",
+                title: "Inquiry-Based Learning (IB)",
+                description: "Integrating International Baccalaureate (IB) Approaches to Teaching and Learning (ATL) to foster critical thinking, self-management, and research skills."
             },
             {
-                icon: "🤝",
-                title: "Inclusive & Supportive Classroom",
-                description: "A strong classroom community relies on mutual respect, empathy, and emotional safety. I foster a supportive culture where every student's voice and background are celebrated."
+                icon: "💻",
+                title: "Technology-Enhanced Instruction",
+                description: "Utilizing interactive LMS, Zoom, ClassIn, Nearpod, and Kahoot to create 95%+ engagement rates in synchronous virtual and blended classrooms."
             },
             {
-                icon: "🎨",
-                title: "Differentiated & Creative Instruction",
-                description: "No two students learn the exact same way. I integrate multi-sensory strategies, visual media, technology, and scaffolded instruction to meet every child's unique needs."
+                icon: "🌏",
+                title: "Global Mindedness & Inclusion",
+                description: "Designing scaffolded, differentiated instruction for diverse international learners to cultivate confidence, intercultural respect, and academic success."
             }
         ]
     },
+    skills: {
+        pedagogy: ["Inquiry-Based Learning (IB)", "Differentiated Instruction", "Scaffolding", "Curriculum Alignment"],
+        management: ["Behavioral Modification", "Student Engagement (95% Rate)", "Group Dynamics", "Virtual & Physical Classroom Leadership"],
+        technology: ["LMS Platforms", "ClassIn", "Zoom", "Kahoot", "Nearpod", "Interactive Whiteboards", "Microsoft Suite"],
+        languages: ["English (Fluent)", "Filipino (Native)"]
+    },
     experience: [
         {
-            role: "Lead Elementary Educator (Grade 3)",
-            organization: "Bright Futures Elementary School",
-            period: "2023 - Present",
-            badge: "Current Role",
+            role: "ESL & Science Teacher",
+            organization: "Washington School, Inc.",
+            period: "Jul 2023 – Jul 2026",
+            badge: "International Educator",
             responsibilities: [
-                "Designed and executed comprehensive curriculum covering Reading, Writing, Mathematics, and Integrated STEM.",
-                "Implemented differentiated reading groups that improved grade-level literacy proficiency by 28%.",
-                "Pioneered a monthly 'Young Inventors' STEM lab encouraging collaborative hands-on engineering projects.",
-                "Maintained frequent transparent communication with parents via weekly digital updates and conferences."
+                "Delivered synchronous ESL and Science instruction to diverse international students; ranked Top 3 Performer (Sept 2024).",
+                "Integrated International Baccalaureate (IB) Approaches to Teaching & Learning (ATL) standards into daily lessons, fostering inquiry-based learning.",
+                "Maintained effective classroom management in virtual settings with an average 95% student engagement rate."
             ],
-            skills: ["Curriculum Design", "STEM Integration", "Literacy Stations", "Parent Partnership"]
+            skills: ["IB ATL Standards", "ESL Instruction", "Science Pedagogy", "ClassIn & Zoom", "Top 3 Performer"]
         },
         {
-            role: "Associate Teacher (Grade 2)",
-            organization: "Oakridge Elementary Academy",
-            period: "2021 - 2023",
-            badge: "Full-Time",
+            role: "Pre-Service Classroom Teacher",
+            organization: "San Jose Community High School",
+            period: "Apr 2023 – Jul 2023",
+            badge: "Grade 9 TLE",
             responsibilities: [
-                "Co-taught 24 second-grade students, facilitating small group guided math and phonics instruction.",
-                "Integrated digital interactive learning tools and Google Classroom into daily lesson routines.",
-                "Organized field trips, science fairs, and school-wide literacy night celebrations."
+                "Facilitated 360+ teaching hours for Grade 9 students in large classrooms (50+ learners per section).",
+                "Designed daily comprehensive lesson plans for Technology & Livelihood Education (TLE), adapting strategies to ensure student comprehension.",
+                "Collaborated closely with faculty and parents to assess, monitor, and support student progress."
             ],
-            skills: ["Phonics Instruction", "Co-Teaching", "EdTech Tools", "Classroom Management"]
+            skills: ["Classroom Management (50+ Students)", "TLE Curriculum", "Parent Collaboration", "360+ Practicum Hours"]
         },
         {
-            role: "Learning Support Specialist",
-            organization: "Community Youth Learning Center",
-            period: "2020 - 2021",
-            badge: "Specialist",
+            role: "Service & Team Trainer",
+            organization: "Jollibee Food Corps",
+            period: "Jun 2018 – Apr 2023",
+            badge: "Leadership & Training",
             responsibilities: [
-                "Provided targeted 1-on-1 and small-group tutoring in foundational math and reading for K-5 students.",
-                "Developed individualized learning growth plans and tracked progress using formative assessments."
+                "Trained new employees on Standard Operating Procedures (SOPs), developing strong leadership, communication, and instructional skills.",
+                "Managed high-pressure team situations with a sharp focus on conflict resolution and customer satisfaction."
             ],
-            skills: ["1-on-1 Intervention", "Formative Assessment", "Social-Emotional Learning"]
+            skills: ["Team Leadership", "Instructional SOP Training", "Conflict Resolution", "Communication"]
         }
     ],
     education: [
         {
-            degree: "Bachelor of Science in Elementary Education (K-5)",
-            institution: "State University College of Education",
-            year: "2020",
-            honors: "Magna Cum Laude"
+            degree: "Bachelor of Technology and Livelihood Education (Home Economics)",
+            institution: "Eulogio 'Amang' Rodriguez Institute of Science and Technology",
+            year: "Aug 2023",
+            honors: "Degree Conferred"
         },
         {
-            degree: "State Teaching License & K-5 Elementary Certification",
-            institution: "Department of Education",
-            year: "2020",
-            honors: "Active & Certified"
+            degree: "Licensed Professional Teacher (LPT)",
+            institution: "Professional Regulation Commission | Philippines",
+            year: "Certified",
+            honors: "Board Certified Teacher"
         },
         {
-            degree: "Specialization in Early Childhood STEM & Inclusive Pedagogy",
-            institution: "Educational Leadership Institute",
-            year: "2022",
-            honors: "Professional Certificate"
+            degree: "120-Hour TEFL/TESOL Certification",
+            institution: "Teachers Record & World TESOL Academy",
+            year: "Jan 2025",
+            honors: "International TEFL/TESOL Certified"
+        },
+        {
+            degree: "IB Certificate: Approaches to Teaching and Learning (ATL)",
+            institution: "Washington School Inc.",
+            year: "Apr 2025",
+            honors: "IB Educator Certificate"
+        }
+    ],
+    professionalDevelopment: [
+        {
+            title: "Embedding IB Philosophy in Online Learning",
+            provider: "Washington School Inc.",
+            date: "June 2026"
+        },
+        {
+            title: "Empowerment Week: Enhancing Effective Learning",
+            provider: "Washington School Inc. (WSI)",
+            date: "July 2024"
+        },
+        {
+            title: "ESL Professional Training Program",
+            provider: "Washington School Inc.",
+            date: "July 2023"
+        }
+    ],
+    references: [
+        {
+            name: "Roxanne Marie F. Parong",
+            title: "Department Head",
+            email: "roxanne.fabriga.parong@gmail.com",
+            phone: "+63 915 688 415"
+        },
+        {
+            name: "Larabel Belleza",
+            title: "Senior Administrative Officer",
+            email: "arahlarabell@gmail.com",
+            phone: "+63 976 609 3011"
         }
     ],
     showcase: [
         {
-            title: "Hands-on Ecosystems & Plant Life Cycle Unit",
-            grade: "Grade 3 Science & Literacy",
-            description: "An integrated 3-week inquiry unit where students grow bean plants, keep observation logs, and publish a illustrated class field guide.",
-            tags: ["STEM", "Science Journaling", "Hands-on"]
+            title: "IB ATL Science & Inquiry Lab Unit",
+            grade: "International Science (Synchronous Virtual)",
+            description: "An inquiry-driven science unit incorporating virtual experiments, Nearpod interactive slides, and IB Approaches to Teaching & Learning (ATL) reflection journals.",
+            tags: ["IB Science", "Inquiry-Based", "Nearpod"]
         },
         {
-            title: "Interactive Storytellers Workshop",
-            grade: "Grade 2 & 3 English Language Arts",
-            description: "Students write original narrative stories, sketch character profiles, and read aloud to kindergarten reading buddies.",
-            tags: ["Literacy", "Creative Writing", "Peer Mentorship"]
+            title: "Interactive ESL Language Booster Program",
+            grade: "ESL / English Learners",
+            description: "Scaffolded language modules utilizing ClassIn and gamified Kahoot centers, resulting in a 95% engagement rate among diverse international learners.",
+            tags: ["ESL / TEFL", "ClassIn", "Gamified Learning"]
         },
         {
-            title: "Math Mystery Explorers Station",
-            grade: "K - Grade 3 Mathematics",
-            description: "Gamified math learning centers utilizing physical manipulatives and tablet challenges to build number sense and problem solving.",
-            tags: ["Math Center", "Gamification", "Manipulatives"]
+            title: "Technology & Livelihood Education (TLE) Practicum",
+            grade: "Grade 9 (50+ Student Classroom)",
+            description: "360+ teaching hours developing hands-on learning strategies and collaborative group workshops for large secondary classroom environments.",
+            tags: ["TLE Curriculum", "Classroom Leadership", "High Engagement"]
         }
     ]
 };
