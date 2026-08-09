@@ -1,6 +1,6 @@
 /**
  * Teacher Portfolio Data Configuration - Jeffrey D. Tarroza, LPT
- * Official Resume Data (Revised Netlify Link & QR Code)
+ * Official Resume Data & Visual Evidence Portfolio
  */
 
 const portfolioData = {
@@ -10,6 +10,7 @@ const portfolioData = {
         tagline: "Inspiring Inquiry, Global Mindedness, & Academic Excellence",
         bio: "Licensed Teacher with 3 years of ESL, Math, and Science teaching experience in international classrooms. Skilled in inquiry-based learning, technology-enhanced instruction, and managing large, diverse groups to drive academic excellence and global-mindedness.",
         objective: "To inspire curiosity and critical thinking in international learners through innovative, inquiry-driven teaching, while leveraging technology and differentiated instruction to create inclusive, high-achieving classrooms.",
+        strengths: "My teaching strengths lie in my ability to create a supportive and engaging learning environment, my strong content knowledge, and my commitment to student success. I am confident in my ability to adapt my teaching methods to meet the needs of diverse learners and to continually improve my practice through reflection and professional development.",
         location: "Carmona City, Cavite, Philippines",
         email: "jeffreytarroza.educator@gmail.com",
         phone: "+63 912 295 1103",
@@ -29,7 +30,14 @@ const portfolioData = {
     },
     philosophy: {
         headline: "Educational Philosophy & Pedagogy",
-        summary: "To inspire curiosity and critical thinking in international learners through innovative, inquiry-driven teaching, while leveraging technology and differentiated instruction to create inclusive, high-achieving classrooms.",
+        summary: "My teaching philosophy is centered around creating a student-centered and inclusive learning environment where every student has the potential to succeed. I believe children are natural scientists; my role is to facilitate discovery through inquiry-based learning, bridging abstract concepts with hands-on experimentation.",
+        commitments: [
+            "Creating engaging and relevant learning experiences",
+            "Providing timely and constructive feedback",
+            "Promoting a growth mindset",
+            "Using technology to enhance learning",
+            "Continually reflecting on practice and seeking professional development"
+        ],
         pillars: [
             {
                 icon: "🔬",
@@ -46,6 +54,92 @@ const portfolioData = {
                 title: "Multilingual & Differentiated Pedagogy",
                 description: "Specialized in teaching foreign students and multilingual learners, ensuring language acquisition and subject mastery aligned with international school standards."
             }
+        ]
+    },
+    gallery: [
+        {
+            image: "./assets/classroom_evidence.jpg",
+            title: "Classroom-Based Teaching (Differentiated Instruction)",
+            location: "San Jose Community High School, Philippines",
+            description: "Facilitating 360+ instructional hours for Grade 9 students in large-group classrooms of 50+ learners using hands-on differentiation."
+        },
+        {
+            image: "./assets/virtual_classroom.jpg",
+            title: "Virtual Classroom Teaching (Zoom & ClassIn)",
+            location: "Washington School Inc. (International Learners)",
+            description: "Synchronous ESL, Math, and Science instruction aligned to IB Learner Profile, ATT, and ATL standards with 95% student engagement."
+        },
+        {
+            image: "./assets/winter_camp.jpg",
+            title: "Winter Camp 2025 Celebration",
+            location: "Washington School Inc.",
+            description: "Leading international campers and co-teachers during the 38th Winter Camp, recognized with a Certificate of Appreciation."
+        }
+    ],
+    certifications: [
+        {
+            title: "WSI-IB Approaches to Teaching and Learning (ATL)",
+            issuer: "Washington School Inc. (Facilitated by IBDP Team)",
+            date: "April 10, 2025",
+            badge: "IB Certified",
+            description: "10-day intensive in-house training on IB ATL standards and inquiry-based pedagogy."
+        },
+        {
+            title: "Embedding IB Philosophy in Online Learning",
+            issuer: "Washington School Inc.",
+            date: "June 22, 2026",
+            badge: "21 Training Hours",
+            description: "Focusing on integrating IB Philosophy, ATL, IB Learner Profile, and assessment practices into virtual learning."
+        },
+        {
+            title: "120-Hour TESOL/TEFL Certificate",
+            issuer: "World TESOL Academy & Teachers Record",
+            date: "Jan 13, 2025",
+            badge: "Cert # WTA222101957",
+            description: "Accredited by ACCREDITAT & The CPD Certification Service for teaching English to non-native speakers."
+        },
+        {
+            title: "Teaching Internship Certificate of Completion",
+            issuer: "San Jose Community High School (DepEd Cavite)",
+            date: "July 7, 2023",
+            badge: "360 Hours",
+            description: "Full-time teaching internship completing 6 units / 360 hours in TLE and ICT subjects."
+        },
+        {
+            title: "120-Hour TEFL Course (Distinction)",
+            issuer: "TEFL Professional Institute - Teacher Record",
+            date: "Nov 2024",
+            badge: "Cert # TR6388526051",
+            description: "Completed with Distinction in Teaching English as a Foreign Language."
+        },
+        {
+            title: "Certificate of Appreciation - 38th Winter Camp",
+            issuer: "Washington School Inc., Carmona, Cavite",
+            date: "Feb 27, 2025",
+            badge: "Winter Camp Leadership",
+            description: "Recognized for outstanding dedication in mentoring international campers."
+        }
+    ],
+    sampleLessonPlan: {
+        title: "Grade 6 Science: Matter - Plant Parts and Their Functions",
+        provocativeQuestion: "What would happen if a plant lost one of its parts? Could it still survive? Why or why not?",
+        learnerProfile: [
+            { trait: "Inquirer", desc: "Ask questions and investigate plant structures." },
+            { trait: "Thinker", desc: "Analyze how plant parts work together." },
+            { trait: "Caring", desc: "Appreciate the importance of plants in sustaining life." }
+        ],
+        globalContext: "Scientific and Technical Innovation — Understanding plant structures helps us protect biodiversity and improve sustainable food production.",
+        activities: [
+            { step: "Engage", desc: "Observe a real plant or virtual model and predict the function of each part." },
+            { step: "Explore", desc: "In pairs or breakout rooms, label plant structures and discuss their functions." },
+            { step: "Explain", desc: "Share findings and compare scientific observations with classmates." },
+            { step: "Extend", desc: "Design a 'super plant' by modifying one plant part and explaining its survival advantage." },
+            { step: "Reflect", desc: "Write or record one new understanding and one remaining question." }
+        ],
+        assessment: [
+            "Label a plant diagram correctly.",
+            "Explain the function of each plant part using complete sentences.",
+            "Participate actively in discussions and justify ideas with scientific evidence."
         ]
     },
     skills: {

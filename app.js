@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('themeToggleBtn');
     const timelineContainer = document.getElementById('timelineContainer');
     const philosophyGrid = document.getElementById('philosophyPillarsGrid');
+    const galleryContainer = document.getElementById('galleryContainer');
+    const certificationsContainer = document.getElementById('certificationsContainer');
     const showcaseGrid = document.getElementById('showcaseGrid');
     const tabButtons = document.querySelectorAll('.timeline-tabs .tab-btn');
     const contactForm = document.getElementById('contactForm');
@@ -25,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderAll(data) {
         renderPersonalDetails(data.personal);
         renderPhilosophy(data.philosophy);
+        renderGallery(data.gallery);
+        renderCertifications(data.certifications);
         renderTimeline(data, activeTimelineTab);
         renderShowcase(data.showcase);
     }
@@ -75,6 +79,42 @@ document.addEventListener('DOMContentLoaded', () => {
                 </article>
             `).join('');
         }
+    }
+
+    function renderGallery(galleryItems) {
+        if (!galleryContainer || !galleryItems) return;
+        galleryContainer.innerHTML = galleryItems.map(item => `
+            <article class="showcase-card" style="padding: 0; overflow: hidden;">
+                <div style="width: 100%; aspect-ratio: 16/10; overflow: hidden; background: var(--border-subtle);">
+                    <img src="${item.image}" alt="${item.title}" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-normal);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div style="padding: 1.5rem;">
+                    <span class="showcase-grade">${item.location}</span>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">${item.title}</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">${item.description}</p>
+                </div>
+            </article>
+        `).join('');
+    }
+
+    function renderCertifications(certItems) {
+        if (!certificationsContainer || !certItems) return;
+        certificationsContainer.innerHTML = certItems.map(cert => `
+            <article class="philosophy-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <div class="philosophy-icon" style="margin-bottom: 0;">📜</div>
+                        <span class="timeline-badge">${cert.badge}</span>
+                    </div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.4rem;">${cert.title}</h3>
+                    <p style="font-size: 0.85rem; color: var(--sage); font-weight: 600; margin-bottom: 0.75rem;">${cert.issuer} • ${cert.date}</p>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">${cert.description}</p>
+                </div>
+                <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-subtle);">
+                    <span style="font-size: 0.75rem; font-weight: 700; color: var(--terracotta); text-transform: uppercase;">✔ Verified Credential</span>
+                </div>
+            </article>
+        `).join('');
     }
 
     function renderTimeline(data, tab) {
@@ -209,11 +249,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (formSuccessAlert) formSuccessAlert.style.display = 'block';
                     contactForm.reset();
                 } else {
-                    // Fallback to standard form submit if AJAX is blocked
                     contactForm.submit();
                 }
             } catch (err) {
-                // If network error, attempt direct submit
                 try {
                     contactForm.submit();
                 } catch (fallbackErr) {
