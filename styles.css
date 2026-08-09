@@ -1,6 +1,6 @@
 /* ==========================================================================
    Teacher Web Portfolio - Design System & Stylesheet
-   Theme: Warm & Inspiring (K-5 Elementary Education)
+   Theme: Warm & Inspiring (K-5 & International Education)
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
@@ -819,63 +819,6 @@ textarea.form-control {
     min-height: 120px;
 }
 
-/* Modal Quick Editor */
-.modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
-    z-index: 2000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity var(--transition-fast);
-}
-
-.modal-backdrop.open {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.modal-card {
-    background-color: var(--bg-surface);
-    width: 100%;
-    max-width: 650px;
-    max-height: 85vh;
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-lg);
-    overflow-y: auto;
-    padding: 2rem;
-}
-
-.modal-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.modal-close {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--text-muted);
-}
-
-.modal-close:hover {
-    color: var(--text-primary);
-}
-
 /* Footer */
 .footer {
     background-color: var(--bg-surface);
@@ -926,6 +869,32 @@ textarea.form-control {
     font-weight: 600;
 }
 
+/* Print Styles for PDF Generation */
+@media print {
+    .header, .nav-actions, .timeline-tabs, .contact-form, .footer, #qrcode button {
+        display: none !important;
+    }
+    body {
+        background-color: #FFF !important;
+        color: #000 !important;
+    }
+    .hero {
+        padding-top: 1rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .section {
+        padding: 2rem 0 !important;
+        page-break-inside: avoid;
+    }
+    .profile-card {
+        box-shadow: none !important;
+        border: 1px solid #CCC !important;
+    }
+    .btn, .social-btn {
+        display: none !important;
+    }
+}
+
 /* Responsive Media Queries */
 @media (max-width: 992px) {
     .hero-grid {
@@ -946,7 +915,7 @@ textarea.form-control {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Mobile menu can be toggled */
+        display: none;
     }
     .hero-title {
         font-size: 2.5rem;

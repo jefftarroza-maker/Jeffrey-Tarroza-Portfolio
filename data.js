@@ -1,29 +1,31 @@
 /**
  * Teacher Portfolio Data Configuration - Jeffrey D. Tarroza, LPT
- * Official Resume Data
+ * Official Resume Data (Revised Netlify Link & QR Code)
  */
 
 const portfolioData = {
     personal: {
         name: "Jeffrey D. Tarroza, LPT",
-        title: "IB-Trained ESL & Science Educator",
+        title: "IB-Trained ESL, Math & Science Educator",
         tagline: "Inspiring Inquiry, Global Mindedness, & Academic Excellence",
-        bio: "IB-trained Licensed Teacher with 3 years of ESL and Science teaching experience in international classrooms. Skilled in inquiry-based learning, technology-enhanced instruction, and managing large, diverse groups to drive academic excellence and global-mindedness.",
+        bio: "Licensed Teacher with 3 years of ESL, Math, and Science teaching experience in international classrooms. Skilled in inquiry-based learning, technology-enhanced instruction, and managing large, diverse groups to drive academic excellence and global-mindedness.",
         objective: "To inspire curiosity and critical thinking in international learners through innovative, inquiry-driven teaching, while leveraging technology and differentiated instruction to create inclusive, high-achieving classrooms.",
         location: "Carmona City, Cavite, Philippines",
         email: "jeffreytarroza.educator@gmail.com",
         phone: "+63 912 295 1103",
+        website: "https://jeffreytarrozateachingportfolio.netlify.app/",
+        qrCodeUrl: "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://jeffreytarrozateachingportfolio.netlify.app/",
         profilePhoto: "./assets/profile.jpg",
-        resumeLink: "#contact",
+        resumeLink: "https://jeffreytarrozateachingportfolio.netlify.app/",
         stats: [
-            { value: "3+", label: "Years ESL & Science Experience" },
+            { value: "3+ Years", label: "International ESL, Math & Science" },
             { value: "LPT", label: "Licensed Professional Teacher" },
             { value: "IB ATL", label: "Certified IB Educator" }
         ]
     },
     socialLinks: {
-        linkedin: "https://linkedin.com",
-        email: "mailto:jeffreytarroza.educator@gmail.com"
+        email: "mailto:jeffreytarroza.educator@gmail.com",
+        website: "https://jeffreytarrozateachingportfolio.netlify.app/"
     },
     philosophy: {
         headline: "Educational Philosophy & Pedagogy",
@@ -32,50 +34,54 @@ const portfolioData = {
             {
                 icon: "🔬",
                 title: "Inquiry-Based Learning (IB)",
-                description: "Integrating International Baccalaureate (IB) Approaches to Teaching and Learning (ATL) to foster critical thinking, self-management, and research skills."
+                description: "Integrating International Baccalaureate (IB) Approaches to Learning (ATL) to foster critical thinking, collaboration, and global citizenship."
             },
             {
                 icon: "💻",
-                title: "Technology-Enhanced Instruction",
-                description: "Utilizing interactive LMS, Zoom, ClassIn, Nearpod, and Kahoot to create 95%+ engagement rates in synchronous virtual and blended classrooms."
+                title: "Technology-Enhanced & ICT Instruction",
+                description: "Leveraging digital resources, LMS, ClassIn, Zoom, Kahoot, and Nearpod to achieve 95% learner engagement across online and face-to-face classrooms."
             },
             {
                 icon: "🌏",
-                title: "Global Mindedness & Inclusion",
-                description: "Designing scaffolded, differentiated instruction for diverse international learners to cultivate confidence, intercultural respect, and academic success."
+                title: "Multilingual & Differentiated Pedagogy",
+                description: "Specialized in teaching foreign students and multilingual learners, ensuring language acquisition and subject mastery aligned with international school standards."
             }
         ]
     },
     skills: {
         pedagogy: ["Inquiry-Based Learning (IB)", "Differentiated Instruction", "Scaffolding", "Curriculum Alignment"],
-        management: ["Behavioral Modification", "Student Engagement (95% Rate)", "Group Dynamics", "Virtual & Physical Classroom Leadership"],
-        technology: ["LMS Platforms", "ClassIn", "Zoom", "Kahoot", "Nearpod", "Interactive Whiteboards", "Microsoft Suite"],
+        management: ["Behavioral Modification", "Student Engagement (95% Rate)", "Group Dynamics", "Large Classroom Leadership (50+ Learners)"],
+        technology: ["LMS Platforms", "ClassIn", "Zoom", "Kahoot", "Nearpod", "Interactive Whiteboards", "Microsoft Suite", "ICT Digital Tools"],
         languages: ["English (Fluent)", "Filipino (Native)"]
     },
     experience: [
         {
-            role: "ESL & Science Teacher",
+            role: "Licensed Teacher | 3 Years International ESL, Math & Science",
             organization: "Washington School, Inc.",
             period: "Jul 2023 – Jul 2026",
             badge: "International Educator",
             responsibilities: [
-                "Delivered synchronous ESL and Science instruction to diverse international students; ranked Top 3 Performer (Sept 2024).",
-                "Integrated International Baccalaureate (IB) Approaches to Teaching & Learning (ATL) standards into daily lessons, fostering inquiry-based learning.",
-                "Maintained effective classroom management in virtual settings with an average 95% student engagement rate."
+                "Delivered inquiry-based ESL, Mathematics, and Science instruction to diverse international learners across online and face-to-face classrooms.",
+                "Consistently ranked Top 3 Performer (Sept 2024) for instructional excellence and student achievement.",
+                "Integrated IB Approaches to Learning (ATL) and differentiated pedagogy to foster critical thinking, collaboration, and global citizenship.",
+                "Achieved 95% learner engagement through effective classroom management and technology-enhanced learning strategies.",
+                "Specialized in teaching foreign students and multilingual learners, ensuring language acquisition and subject mastery aligned with international school standards."
             ],
-            skills: ["IB ATL Standards", "ESL Instruction", "Science Pedagogy", "ClassIn & Zoom", "Top 3 Performer"]
+            skills: ["ESL, Math & Science", "IB ATL Standards", "Online & Face-to-Face", "Top 3 Performer", "Multilingual Learners"]
         },
         {
-            role: "Pre-Service Classroom Teacher",
+            role: "Pre-Service Classroom Teacher | ICT Subject",
             organization: "San Jose Community High School",
             period: "Apr 2023 – Jul 2023",
-            badge: "Grade 9 TLE",
+            badge: "Grade 9 ICT & TLE",
             responsibilities: [
-                "Facilitated 360+ teaching hours for Grade 9 students in large classrooms (50+ learners per section).",
-                "Designed daily comprehensive lesson plans for Technology & Livelihood Education (TLE), adapting strategies to ensure student comprehension.",
-                "Collaborated closely with faculty and parents to assess, monitor, and support student progress."
+                "Delivered 360+ instructional hours to Grade 9 students in large classrooms of 50+ learners, ensuring engagement and participation.",
+                "Developed and implemented daily lesson plans for Technology and Livelihood Education (TLE), adapting teaching strategies to diverse learning needs.",
+                "Integrated ICT tools and digital resources to enhance comprehension and foster practical skills.",
+                "Collaborated with faculty, administrators, and parents to monitor student progress and provide targeted support.",
+                "Applied classroom management techniques to maintain a positive and productive learning environment."
             ],
-            skills: ["Classroom Management (50+ Students)", "TLE Curriculum", "Parent Collaboration", "360+ Practicum Hours"]
+            skills: ["ICT Tools & Digital Resources", "TLE Curriculum", "Classroom Leadership (50+ Learners)", "360+ Instructional Hours"]
         },
         {
             role: "Service & Team Trainer",
@@ -83,8 +89,8 @@ const portfolioData = {
             period: "Jun 2018 – Apr 2023",
             badge: "Leadership & Training",
             responsibilities: [
-                "Trained new employees on Standard Operating Procedures (SOPs), developing strong leadership, communication, and instructional skills.",
-                "Managed high-pressure team situations with a sharp focus on conflict resolution and customer satisfaction."
+                "Trained new employees on SOPs, developing strong leadership and instructional skills.",
+                "Managed high-pressure situations with focus on conflict resolution and customer satisfaction."
             ],
             skills: ["Team Leadership", "Instructional SOP Training", "Conflict Resolution", "Communication"]
         }
@@ -127,7 +133,7 @@ const portfolioData = {
             date: "July 2024"
         },
         {
-            title: "ESL Professional Training Program",
+            title: "ESL Training Program",
             provider: "Washington School Inc.",
             date: "July 2023"
         }
@@ -148,22 +154,22 @@ const portfolioData = {
     ],
     showcase: [
         {
-            title: "IB ATL Science & Inquiry Lab Unit",
-            grade: "International Science (Synchronous Virtual)",
-            description: "An inquiry-driven science unit incorporating virtual experiments, Nearpod interactive slides, and IB Approaches to Teaching & Learning (ATL) reflection journals.",
-            tags: ["IB Science", "Inquiry-Based", "Nearpod"]
+            title: "International ESL, Mathematics & Science Unit",
+            grade: "Online & Face-to-Face Classrooms",
+            description: "Inquiry-based curriculum integrating IB Approaches to Learning (ATL) for multilingual learners, maintaining a 95% engagement rate.",
+            tags: ["ESL, Math & Science", "IB ATL", "Multilingual Pedagogy"]
         },
         {
-            title: "Interactive ESL Language Booster Program",
-            grade: "ESL / English Learners",
-            description: "Scaffolded language modules utilizing ClassIn and gamified Kahoot centers, resulting in a 95% engagement rate among diverse international learners.",
-            tags: ["ESL / TEFL", "ClassIn", "Gamified Learning"]
+            title: "ICT & Digital Resources Workshop",
+            grade: "Grade 9 ICT & TLE",
+            description: "Integrated digital ICT tools and practical skills training for large classrooms of 50+ students across 360+ instructional hours.",
+            tags: ["ICT Tools", "TLE Curriculum", "50+ Learners"]
         },
         {
-            title: "Technology & Livelihood Education (TLE) Practicum",
-            grade: "Grade 9 (50+ Student Classroom)",
-            description: "360+ teaching hours developing hands-on learning strategies and collaborative group workshops for large secondary classroom environments.",
-            tags: ["TLE Curriculum", "Classroom Leadership", "High Engagement"]
+            title: "Gamified Multilingual Language Acquisition",
+            grade: "International Learners",
+            description: "Differentiated language acquisition strategies using ClassIn, Kahoot, and Nearpod, recognized with a Top 3 Performer award.",
+            tags: ["ClassIn & Nearpod", "Top 3 Performer", "Technology-Enhanced"]
         }
     ]
 };

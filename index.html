@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeffrey D. Tarroza, LPT | IB-Trained ESL & Science Educator</title>
-    <meta name="description" content="Official web portfolio of Jeffrey D. Tarroza, LPT - IB-trained Licensed Teacher with experience in ESL, Science, inquiry-based learning, and international education.">
+    <title>Jeffrey D. Tarroza, LPT | IB-Trained ESL, Math & Science Educator</title>
+    <meta name="description" content="Official web portfolio of Jeffrey D. Tarroza, LPT - IB-trained Licensed Teacher specializing in ESL, Math, Science, and ICT education.">
     <link rel="stylesheet" href="./styles.css">
     <script src="./data.js"></script>
 </head>
@@ -14,7 +14,7 @@
     <header class="header">
         <div class="container">
             <nav class="navbar" aria-label="Main Navigation">
-                <a href="#" class="nav-brand" id="navBrand">
+                <a href="https://jeffreytarrozateachingportfolio.netlify.app/" target="_blank" class="nav-brand" id="navBrand">
                     Jeffrey D. Tarroza, LPT <span class="nav-brand-badge">IB Educator</span>
                 </a>
                 <ul class="nav-links">
@@ -22,12 +22,16 @@
                     <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#qrcode" class="nav-link">QR Code</a></li>
                     <li><a href="#references" class="nav-link">References</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="nav-actions">
                     <button class="btn btn-icon" id="themeToggleBtn" aria-label="Toggle dark/light mode" title="Toggle Theme">
                         🌙
+                    </button>
+                    <button class="btn btn-secondary" onclick="window.print()" title="Download PDF Version">
+                        📄 Download PDF
                     </button>
                     <a href="#contact" class="btn btn-primary">Get in Touch</a>
                 </div>
@@ -50,16 +54,16 @@
                             Inspiring Inquiry & <span>Global-Mindedness</span>
                         </h1>
                         <p class="hero-description" id="heroBioDescription">
-                            IB-trained Licensed Teacher with 3 years of ESL and Science teaching experience in international classrooms. Skilled in inquiry-based learning, technology-enhanced instruction, and driving academic excellence.
+                            Licensed Teacher with 3 years of ESL, Math, and Science teaching experience in international classrooms. Skilled in inquiry-based learning, technology-enhanced instruction, and driving academic excellence.
                         </p>
                         <div class="hero-ctas">
                             <a href="#experience" class="btn btn-primary">View Experience</a>
-                            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                            <button onclick="window.print()" class="btn btn-secondary">📄 Download PDF Profile</button>
                         </div>
                         <div class="hero-stats">
                             <div class="stat-item">
                                 <h4 id="statYears">3+ Years</h4>
-                                <p>ESL & Science Teaching</p>
+                                <p>ESL, Math & Science</p>
                             </div>
                             <div class="stat-item">
                                 <h4 id="statCert">LPT</h4>
@@ -80,11 +84,16 @@
                             </div>
                             <div class="profile-info">
                                 <h2 class="profile-name" id="cardName">Jeffrey D. Tarroza, LPT</h2>
-                                <p class="profile-role" id="cardTitle">IB-Trained ESL & Science Educator</p>
+                                <p class="profile-role" id="cardTitle">IB-Trained ESL, Math & Science Educator</p>
                                 <div class="profile-tags">
                                     <span class="tag">IB ATL Certified</span>
                                     <span class="tag">TEFL/TESOL Certified</span>
                                     <span class="tag">Inquiry-Based Learning</span>
+                                </div>
+                                <div style="margin-top: 1rem;">
+                                    <a href="https://jeffreytarrozateachingportfolio.netlify.app/" target="_blank" style="font-size: 0.85rem; font-weight: 600; color: var(--terracotta);">
+                                        🌐 jeffreytarrozateachingportfolio.netlify.app
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +163,7 @@
                     <div class="philosophy-card">
                         <div class="philosophy-icon">💻</div>
                         <h3>EdTech & Languages</h3>
-                        <p style="margin-bottom: 1rem;">ClassIn, Zoom, LMS, Kahoot, Nearpod, Interactive Whiteboards, Microsoft Suite. Fluent in English & Native Filipino.</p>
+                        <p style="margin-bottom: 1rem;">ClassIn, Zoom, LMS, Kahoot, Nearpod, Interactive Whiteboards, Microsoft Suite, ICT Tools. Fluent in English & Native Filipino.</p>
                         <div class="profile-tags">
                             <span class="tag">ClassIn</span>
                             <span class="tag">Nearpod</span>
@@ -189,13 +198,40 @@
             </div>
         </section>
 
+        <!-- QR Code & Digital Card Section -->
+        <section class="section" id="qrcode" style="background-color: var(--bg-surface-elevated);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Digital Verification</span>
+                    <h2 class="section-title">Scan QR Code / View Online Profile</h2>
+                    <p class="section-subtitle">Scan with any smartphone camera to instantly open and download Jeffrey D. Tarroza's teaching portfolio.</p>
+                </div>
+
+                <div style="max-width: 500px; margin: 0 auto; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 2.5rem; text-align: center; box-shadow: var(--shadow-md);">
+                    <div style="width: 200px; height: 200px; margin: 0 auto 1.5rem auto; border-radius: 16px; overflow: hidden; border: 4px solid var(--terracotta-light); background: #FFF; display: flex; align-items: center; justify-content: center;">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://jeffreytarrozateachingportfolio.netlify.app/" alt="Jeffrey D. Tarroza Portfolio QR Code" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Professional Identification QR</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        <a href="https://jeffreytarrozateachingportfolio.netlify.app/" target="_blank" style="font-weight: 700; color: var(--terracotta);">
+                            https://jeffreytarrozateachingportfolio.netlify.app/
+                        </a>
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <button onclick="window.print()" class="btn btn-primary">📄 Download PDF Profile</button>
+                        <a href="https://jeffreytarrozateachingportfolio.netlify.app/" target="_blank" class="btn btn-secondary">🌐 Open Web Link</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Classroom Showcase -->
-        <section class="section" id="showcase" style="background-color: var(--bg-surface-elevated);">
+        <section class="section" id="showcase">
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag">Classroom Spotlight</span>
                     <h2 class="section-title">Featured Teaching Highlights</h2>
-                    <p class="section-subtitle">Examples of integrated ESL, IB Science, and TLE instructional units.</p>
+                    <p class="section-subtitle">Examples of integrated ESL, Math, IB Science, and ICT instructional units.</p>
                 </div>
 
                 <div class="showcase-grid" id="showcaseGrid">
@@ -205,7 +241,7 @@
         </section>
 
         <!-- Character References Section -->
-        <section class="section" id="references">
+        <section class="section" id="references" style="background-color: var(--bg-surface-elevated);">
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag">Endorsements</span>
@@ -234,13 +270,13 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="section" id="contact" style="background-color: var(--bg-surface-elevated);">
+        <section class="section" id="contact">
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag">Get in Touch</span>
                     <h2 class="section-title">Let's Connect & Collaborate</h2>
                     <p class="section-subtitle">
-                        Interested in discussing ESL / Science teaching opportunities or IB curriculum integration? Reach out below!
+                        Interested in discussing ESL, Math, or Science teaching opportunities or IB curriculum integration? Reach out below!
                     </p>
                 </div>
 
@@ -248,6 +284,14 @@
                     <!-- Info Card -->
                     <div class="contact-info-card">
                         <h3 style="font-size: 1.35rem; margin-bottom: 1.5rem;">Contact Information</h3>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">🌐</div>
+                            <div>
+                                <h4>Online Portfolio</h4>
+                                <p><a href="https://jeffreytarrozateachingportfolio.netlify.app/" target="_blank" style="font-size: 0.9rem; font-weight: 600;">jeffreytarrozateachingportfolio.netlify.app</a></p>
+                            </div>
+                        </div>
 
                         <div class="contact-info-item">
                             <div class="contact-icon">✉️</div>
@@ -275,12 +319,12 @@
 
                         <div class="social-links">
                             <a href="mailto:jeffreytarroza.educator@gmail.com" class="social-btn">✉️ Send Direct Email</a>
+                            <button onclick="window.print()" class="social-btn" style="cursor: pointer;">📄 Download PDF</button>
                         </div>
                     </div>
 
                     <!-- Working Contact Form -->
                     <form class="contact-form" id="contactForm" action="https://formsubmit.co/jeffreytarroza.educator@gmail.com" method="POST">
-                        <!-- Hidden FormSubmit configuration -->
                         <input type="hidden" name="_subject" value="New Portfolio Inquiry for Jeffrey D. Tarroza, LPT">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
@@ -298,7 +342,7 @@
                         <div class="form-group">
                             <label for="formGrade">Topic of Inquiry</label>
                             <select id="formGrade" name="topic" class="form-control">
-                                <option value="ESL / Science Teaching Position">ESL / Science Teaching Position</option>
+                                <option value="ESL / Math / Science Teaching Position">ESL / Math / Science Teaching Position</option>
                                 <option value="IB ATL Curriculum Collaboration">IB ATL Curriculum Collaboration</option>
                                 <option value="General Inquiry">General Inquiry</option>
                             </select>
@@ -332,7 +376,12 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3 id="footerName">Jeffrey D. Tarroza, LPT</h3>
-                    <p id="footerTitle">IB-Trained ESL & Science Educator</p>
+                    <p id="footerTitle">IB-Trained ESL, Math & Science Educator</p>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+                        <a href="https://jeffreytarrozateachingportfolio.netlify.app/" target="_blank" style="color: var(--terracotta); font-weight: 600;">
+                            https://jeffreytarrozateachingportfolio.netlify.app/
+                        </a>
+                    </p>
                 </div>
                 <div class="footer-links">
                     <a href="#hero" style="margin-right: 1.5rem;">Back to Top ↑</a>
