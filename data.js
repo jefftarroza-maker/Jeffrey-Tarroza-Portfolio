@@ -1,6 +1,6 @@
 /**
  * Teacher Portfolio Data Configuration - Jeffrey D. Tarroza, LPT
- * Official Resume Data & Authentic User Photo Portfolio
+ * Official Resume Data & Verified Real Certificates
  */
 
 const portfolioData = {
@@ -94,6 +94,7 @@ const portfolioData = {
             issuer: "Washington School Inc. (Facilitated by IBDP Team)",
             date: "April 10, 2025",
             badge: "IB Certified",
+            image: "./assets/certificates/cert_wsi_ib_atl.png",
             description: "10-day intensive in-house training on IB ATL standards and inquiry-based pedagogy."
         },
         {
@@ -101,6 +102,7 @@ const portfolioData = {
             issuer: "Washington School Inc.",
             date: "June 22, 2026",
             badge: "21 Training Hours",
+            image: "./assets/certificates/cert_wsi_ib_online.png",
             description: "Focusing on integrating IB Philosophy, ATL, IB Learner Profile, and assessment practices into virtual learning."
         },
         {
@@ -108,6 +110,7 @@ const portfolioData = {
             issuer: "World TESOL Academy & Teachers Record",
             date: "Jan 13, 2025",
             badge: "Cert # WTA222101957",
+            image: "./assets/certificates/cert_tesol.jpg",
             description: "Accredited by ACCREDITAT & The CPD Certification Service for teaching English to non-native speakers."
         },
         {
@@ -115,20 +118,15 @@ const portfolioData = {
             issuer: "San Jose Community High School (DepEd Cavite)",
             date: "July 7, 2023",
             badge: "360 Hours",
+            image: "./assets/certificates/cert_sjchs_internship.png",
             description: "Full-time teaching internship completing 6 units / 360 hours in TLE and ICT subjects."
-        },
-        {
-            title: "120-Hour TEFL Course (Distinction)",
-            issuer: "TEFL Professional Institute - Teacher Record",
-            date: "Nov 2024",
-            badge: "Cert # TR6388526051",
-            description: "Completed with Distinction in Teaching English as a Foreign Language."
         },
         {
             title: "Certificate of Appreciation - 38th Winter Camp",
             issuer: "Washington School Inc., Carmona, Cavite",
             date: "Feb 27, 2025",
             badge: "Winter Camp Leadership",
+            image: "./assets/certificates/cert_wsi_winter_camp.png",
             description: "Recognized for outstanding dedication in mentoring international campers."
         }
     ],

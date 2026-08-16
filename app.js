@@ -100,18 +100,27 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderCertifications(certItems) {
         if (!certificationsContainer || !certItems) return;
         certificationsContainer.innerHTML = certItems.map(cert => `
-            <article class="philosophy-card" style="display: flex; flex-direction: column; justify-content: space-between;">
-                <div>
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-                        <div class="philosophy-icon" style="margin-bottom: 0;">📜</div>
-                        <span class="timeline-badge">${cert.badge}</span>
+            <article class="philosophy-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                ${cert.image ? `
+                <div style="width: 100%; aspect-ratio: 4/3; overflow: hidden; background: var(--border-subtle); border-bottom: 1px solid var(--border-color);">
+                    <a href="${cert.image}" target="_blank" title="Click to view full certificate">
+                        <img src="${cert.image}" alt="${cert.title}" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-normal);" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                    </a>
+                </div>
+                ` : ''}
+                <div style="padding: 1.5rem; flex-grow: 1;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
+                        <span class="timeline-badge" style="font-size: 0.75rem;">${cert.badge}</span>
+                        <span style="font-size: 0.75rem; font-weight: 700; color: var(--sage); text-transform: uppercase;">✔ Verified</span>
                     </div>
                     <h3 style="font-size: 1.1rem; margin-bottom: 0.4rem;">${cert.title}</h3>
                     <p style="font-size: 0.85rem; color: var(--sage); font-weight: 600; margin-bottom: 0.75rem;">${cert.issuer} • ${cert.date}</p>
-                    <p style="font-size: 0.85rem; color: var(--text-secondary);">${cert.description}</p>
-                </div>
-                <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-subtle);">
-                    <span style="font-size: 0.75rem; font-weight: 700; color: var(--terracotta); text-transform: uppercase;">✔ Verified Credential</span>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">${cert.description}</p>
+                    ${cert.image ? `
+                    <a href="${cert.image}" target="_blank" class="social-btn" style="font-size: 0.8rem; padding: 0.4rem 0.9rem;">
+                        🔍 View Full Certificate
+                    </a>
+                    ` : ''}
                 </div>
             </article>
         `).join('');
