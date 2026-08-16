@@ -1,6 +1,6 @@
 /**
  * Teacher Portfolio Data Configuration - Jeffrey D. Tarroza, LPT
- * Official Resume Data & Visual Evidence Portfolio
+ * Official Resume Data & Authentic User Photo Portfolio
  */
 
 const portfolioData = {
@@ -58,22 +58,34 @@ const portfolioData = {
     },
     gallery: [
         {
-            image: "./assets/classroom_evidence.jpg",
+            image: "./assets/sjchs_classroom.jpg",
             title: "Classroom-Based Teaching (Differentiated Instruction)",
             location: "San Jose Community High School, Philippines",
             description: "Facilitating 360+ instructional hours for Grade 9 students in large-group classrooms of 50+ learners using hands-on differentiation."
         },
         {
-            image: "./assets/virtual_classroom.jpg",
-            title: "Virtual Classroom Teaching (Zoom & ClassIn)",
+            image: "./assets/small_group_study.jpg",
+            title: "Small Group International Instruction",
             location: "Washington School Inc. (International Learners)",
-            description: "Synchronous ESL, Math, and Science instruction aligned to IB Learner Profile, ATT, and ATL standards with 95% student engagement."
+            description: "Interactive small-group study session with international students utilizing globes, inquiry questions, and supportive mentorship."
         },
         {
-            image: "./assets/winter_camp.jpg",
-            title: "Winter Camp 2025 Celebration",
-            location: "Washington School Inc.",
-            description: "Leading international campers and co-teachers during the 38th Winter Camp, recognized with a Certificate of Appreciation."
+            image: "./assets/winter_camp_ceremony.jpg",
+            title: "38th Winter Camp Completion Ceremony",
+            location: "Washington School Inc., Carmona, Cavite",
+            description: "Leading international campers and co-teachers during the 38th Winter Camp completion ceremony and awards night."
+        },
+        {
+            image: "./assets/sjchs_presentation.jpg",
+            title: "ICT & TLE Instructional Presentation",
+            location: "San Jose Community High School",
+            description: "Demonstrating practical digital tools and ICT lesson concepts for large secondary classroom sections."
+        },
+        {
+            image: "./assets/summer_camp_staff.jpg",
+            title: "39th Summer Camp Faculty & Staff Team",
+            location: "Washington School Inc. (IB Candidate School)",
+            description: "Collaborating with international faculty and camp coordinators during the 39th Summer Camp (July 25 – August 22, 2025)."
         }
     ],
     certifications: [
