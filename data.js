@@ -6,10 +6,10 @@
 const portfolioData = {
     personal: {
         name: "Jeffrey D. Tarroza, LPT",
-        title: "IB-Trained ESL, Math & Science Educator",
+        title: "ESL, TLE, Primary Math & Science Educator",
         tagline: "Inspiring Inquiry, Global Mindedness, & Academic Excellence",
-        bio: "Licensed Teacher with 3 years of ESL, Math, and Science teaching experience in international classrooms. Skilled in inquiry-based learning, technology-enhanced instruction, and managing large, diverse groups to drive academic excellence and global-mindedness.",
-        objective: "To inspire curiosity and critical thinking in international learners through innovative, inquiry-driven teaching, while leveraging technology and differentiated instruction to create inclusive, high-achieving classrooms.",
+        bio: "Licensed Teacher with 3 years of ESL, TLE, Primary Math, and Science teaching experience in international and secondary classrooms. Skilled in inquiry-based learning, technology-enhanced instruction, and managing large, diverse groups to drive academic excellence and global-mindedness.",
+        objective: "To inspire curiosity and critical thinking in learners through innovative, inquiry-driven teaching, while leveraging technology and differentiated instruction to create inclusive, high-achieving classrooms.",
         strengths: "My teaching strengths lie in my ability to create a supportive and engaging learning environment, my strong content knowledge, and my commitment to student success. I am confident in my ability to adapt my teaching methods to meet the needs of diverse learners and to continually improve my practice through reflection and professional development.",
         location: "Carmona City, Cavite, Philippines",
         email: "jeffreytarroza.educator@gmail.com",
@@ -19,7 +19,7 @@ const portfolioData = {
         profilePhoto: "./assets/profile.jpg",
         resumeLink: "https://jeffreytarrozateachingportfolio.netlify.app/",
         stats: [
-            { value: "3+ Years", label: "International ESL, Math & Science" },
+            { value: "3+ Years", label: "ESL, TLE, Math & Science" },
             { value: "LPT", label: "Licensed Professional Teacher" },
             { value: "IB ATL", label: "Certified IB Educator" }
         ]
