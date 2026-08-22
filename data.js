@@ -99,11 +99,19 @@ const portfolioData = {
         },
         {
             title: "Embedding IB Philosophy in Online Learning",
-            issuer: "Washington School Inc.",
+            issuer: "Washington School Inc. (IB Candidate School)",
             date: "June 22, 2026",
             badge: "21 Training Hours",
             image: "./assets/certificates/cert_wsi_ib_online.png",
-            description: "Focusing on integrating IB Philosophy, ATL, IB Learner Profile, and assessment practices into virtual learning."
+            description: "Professional development on integrating IB Philosophy, ATL, IB Learner Profile, and assessment into virtual learning."
+        },
+        {
+            title: "120-Hour TEFL Course (Distinction)",
+            issuer: "TEFL Professional Institute - Teacher Record",
+            date: "Nov 2024",
+            badge: "Cert # TR6388526051",
+            image: "./assets/certificates/cert_tefl_teacher_record.png",
+            description: "Completed with Distinction in Teaching English as a Foreign Language, verified by Teacher Record."
         },
         {
             title: "120-Hour TESOL/TEFL Certificate",
@@ -112,6 +120,14 @@ const portfolioData = {
             badge: "Cert # WTA222101957",
             image: "./assets/certificates/cert_tesol.jpg",
             description: "Accredited by ACCREDITAT & The CPD Certification Service for teaching English to non-native speakers."
+        },
+        {
+            title: "ESL Training Program Certificate",
+            issuer: "Washington School Inc. & DepEd Cavite",
+            date: "July 19, 2023",
+            badge: "ESL Head Teacher Verified",
+            image: "./assets/certificates/cert_wsi_esl_training.png",
+            description: "Completed intensive ESL training program, participating in interactive language sessions and cultural activities."
         },
         {
             title: "Teaching Internship Certificate of Completion",
@@ -127,7 +143,7 @@ const portfolioData = {
             date: "Feb 27, 2025",
             badge: "Winter Camp Leadership",
             image: "./assets/certificates/cert_wsi_winter_camp.png",
-            description: "Recognized for outstanding dedication in mentoring international campers."
+            description: "Recognized for outstanding dedication in teaching and mentoring international campers."
         }
     ],
     sampleLessonPlan: {
